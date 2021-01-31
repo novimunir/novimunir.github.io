@@ -83,3 +83,7 @@ h2 {
 .jumbotron {
 	background-color: #FAEBD7;
 }
+
+.jumbotron .tandem{
+	border: solid 2px #01ccff ;	
+}
