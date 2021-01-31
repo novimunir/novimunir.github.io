@@ -77,6 +77,14 @@
 		<div class="row light-gray" id="lokasi">
 			<div class="col-12 col-md-6 ">
 				<br>
+				<h1>Lokasi</h1>
+				<h1><i class="em em-house"></i></h1>
+				<h2>Kediaman mempelai wanita</h2>
+				<p>Blok Manis</p>
+				<p>RT 001 / RW 001</p>
+				<p>Kec: Leuwimunding</p>
+				<p>Kab: Majalengka</p>
+				<br>
 				<h6>Untuk melihat rute, klik "Lihat peta lebih besar" pada maps</h6>
 				<center>
 					<iframe
@@ -85,53 +93,49 @@
 						aria-hidden="false" tabindex="0"></iframe>
 				</center>
 			</div>
-			<div class="countdown">
-				<!-- -------Countdown------ -->
-				<p id="demo"></p>
-				<script>
-					// Mengatur waktu akhir perhitungan mundur
-					var countDownDate = new Date("Feb 20, 2021 09:00:00").getTime();
-
-					// Memperbarui hitungan mundur setiap 1 detik
-					var x = setInterval(function () {
-
-						// Untuk mendapatkan tanggal dan waktu hari ini
-						var now = new Date().getTime();
-
-						// Temukan jarak antara sekarang dan tanggal hitung mundur
-						var distance = countDownDate - now;
-
-						// Perhitungan waktu untuk hari, jam, menit dan detik
-						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-						// Keluarkan hasil dalam elemen dengan id = "demo"
-						document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-							minutes + "m " + seconds + "s ";
-
-						// Jika hitungan mundur selesai, tulis beberapa teks 
-						if (distance < 0) {
-							clearInterval(x);
-							document.getElementById("demo").innerHTML = "EXPIRED";
-						}
-					}, 1000);
-				</script>
-			</div>
-			<!-- -------Countdown------ -->
 
 			<div class="col-12 col-md-6" id="akad">
 				<div class="container cuadrado">
 					<h1>Akad & Resepsi</h1>
 					<hr class="my-4">
 					<h3>20 Februari 2021</h3>
-					<h1><i class="em em-bank"></i></h1>
-					<h2>Kediaman mempelai wanita</h2>
-					<p>Blok Manis</p>
-					<p>RT 001 / RW 001</p>
-					<p>Kec: Leuwimunding</p>
-					<p>Kab: Majalengka</p>
+					<h3>Mulai pukul 09.00 s/d Selesai</h3>
+					<div class="countdown">
+						<!-- -------Countdown------ -->
+						<p id="demo"></p>
+						<script>
+							// Mengatur waktu akhir perhitungan mundur
+							var countDownDate = new Date("Feb 20, 2021 09:00:00").getTime();
+
+							// Memperbarui hitungan mundur setiap 1 detik
+							var x = setInterval(function () {
+
+								// Untuk mendapatkan tanggal dan waktu hari ini
+								var now = new Date().getTime();
+
+								// Temukan jarak antara sekarang dan tanggal hitung mundur
+								var distance = countDownDate - now;
+
+								// Perhitungan waktu untuk hari, jam, menit dan detik
+								var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+								var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+								var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+								var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+								// Keluarkan hasil dalam elemen dengan id = "demo"
+								document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+									minutes + "m " + seconds + "s ";
+
+								// Jika hitungan mundur selesai, tulis beberapa teks 
+								if (distance < 0) {
+									clearInterval(x);
+									document.getElementById("demo").innerHTML = "EXPIRED";
+								}
+							}, 1000);
+						</script>
+					</div>
+					<!-- -------Countdown------ -->
+
 				</div>
 			</div>
 		</div>
