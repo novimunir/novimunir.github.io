@@ -95,6 +95,6 @@ h2 {
 
 footer{
 	height: 50px;
-	color: #ffffff;
-	background-color: rgb(84, 90, 90);
+	padding-top: 5px;
+	background-color: rgb(255, 255, 255);
 }
