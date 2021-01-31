@@ -95,6 +95,7 @@ h2 {
 }
 
 footer{
+	height: 50px;
 	color: #ffffff;
 	background-color: rgb(84, 90, 90);
 }
