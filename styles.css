@@ -29,8 +29,11 @@ img.logo-fecha {
 }
 
 @media screen and (max-width: 600px) {
-	.fondo-principal {
+	.fondo-principal{
 		background-color: aqua;
+	}
+
+	.fondo-principal {
 		background-image: url(images/cover2.jpg);
 		height: 600px;
 		margin-top: 100px;
