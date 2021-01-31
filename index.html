@@ -5,7 +5,7 @@
 	<!-- Meta tags requeridos -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<script src="script.js"></script>
+	<script src="js/script.js"></script>
 	<!-- biblioteca bootstrap css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -67,7 +67,8 @@
 			</div>
 			<div class="col-12 col-md-6 cuadrado">
 				<div class="embed-responsive embed-responsive-16by9">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/aAnNI9e0z0o?autoplay=1" frameborder="0"
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/aAnNI9e0z0o?autoplay=1"
+						frameborder="0"
 						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
@@ -84,6 +85,42 @@
 						aria-hidden="false" tabindex="0"></iframe>
 				</center>
 			</div>
+			<div class="countdown">
+				<!-- -------Countdown------ -->
+				<p id="demo"></p>
+				<script>
+					// Mengatur waktu akhir perhitungan mundur
+					var countDownDate = new Date("Feb 20, 2021 09:00:00").getTime();
+
+					// Memperbarui hitungan mundur setiap 1 detik
+					var x = setInterval(function () {
+
+						// Untuk mendapatkan tanggal dan waktu hari ini
+						var now = new Date().getTime();
+
+						// Temukan jarak antara sekarang dan tanggal hitung mundur
+						var distance = countDownDate - now;
+
+						// Perhitungan waktu untuk hari, jam, menit dan detik
+						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+						// Keluarkan hasil dalam elemen dengan id = "demo"
+						document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+							minutes + "m " + seconds + "s ";
+
+						// Jika hitungan mundur selesai, tulis beberapa teks 
+						if (distance < 0) {
+							clearInterval(x);
+							document.getElementById("demo").innerHTML = "EXPIRED";
+						}
+					}, 1000);
+				</script>
+			</div>
+			<!-- -------Countdown------ -->
+
 			<div class="col-12 col-md-6" id="akad">
 				<div class="container cuadrado">
 					<h1>Akad & Resepsi</h1>
