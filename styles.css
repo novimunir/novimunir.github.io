@@ -87,3 +87,7 @@ h2 {
 .jumbotron .tandem{
 	border: solid 2px #01ccff ;	
 }
+
+.jumbotron {
+	margin-bottom: -10px;
+}
