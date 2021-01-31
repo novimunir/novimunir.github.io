@@ -44,6 +44,22 @@ img.logo-fecha {
 
 }
 
+@media screen and (max-width: 640px) {
+	.fondo-principal {
+		background-image: url(images/cover2.jpg);
+		height: 600px;
+		padding-top: 120px;
+		display: block;
+		/* background-size: cover; */
+		/* padding-top: 10px; */
+	}
+
+	img.logo-fecha {
+		display: none;
+	}
+
+}
+
 h1 {
 	font-family: 'Pinyon Script', cursive;
 }
