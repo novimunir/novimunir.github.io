@@ -93,3 +93,8 @@ h2 {
 .jumbotron {
 	margin-bottom: -10px;
 }
+
+footer{
+	color: #ffffff;
+	background-color: rgb(84, 90, 90);
+}
