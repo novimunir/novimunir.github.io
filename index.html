@@ -139,19 +139,21 @@
 					<br>
 					<h1>Mohonn Do'a Restu</h1>
 					<h3>Terima kasih</h3>
-
-					<audio id="myAudio" controls autoplay>
-						<source src="audio/Marry Me - Train w_ lyrics.mp3" type="audio/ogg">
-						<source src="audio/Marry Me - Train w_ lyrics.mp3" type="audio/mpeg">
+					<!-- -----------audio----------- -->
+					<iframe src="audio/Marry Me - Train w_ lyrics.mp3" allow="autoplay" style="display:none"
+						id="iframeAudio">
+					</iframe>
+					<audio autoplay loop id="myAudio">
+						<source src="audio/Marry Me - Train w_ lyrics.mp3">
 					</audio>
-
 					<p id="play-music"></p>
 					<script>
 						function myFunction() {
-							var x = document.getElementById("myAudio").autoplay;
-							document.getElementById("play-music").innerHTML = x;
+							var music = document.getElementById("myAudio").autoplay;
+							document.getElementById("play-music").innerHTML = music;
 						}
 					</script>
+					<!-- -----------audio----------- -->
 				</div>
 			</div>
 		</div>
