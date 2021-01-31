@@ -31,9 +31,11 @@ img.logo-fecha {
 @media screen and (max-width: 600px) {
 	.fondo-principal {
 		background-image: url(images/cover2.jpg);
-		height: 600px;
-		padding-top: 120px;
-		display: block;
+		height: 100%;
+
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
 		background-size: cover;
 	}
 
@@ -85,15 +87,15 @@ h2 {
 	background-color: #FAEBD7;
 }
 
-.jumbotron .tandem{
-	box-shadow: 2px #000000;	
+.jumbotron .tandem {
+	box-shadow: 2px #000000;
 }
 
 .jumbotron {
 	margin-bottom: -10px;
 }
 
-footer{
+footer {
 	height: 50px;
 	width: 100%;
 	padding-top: 5px;
