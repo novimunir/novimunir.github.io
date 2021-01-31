@@ -32,7 +32,7 @@ img.logo-fecha {
 @media screen and (max-width: 600px) {
 	.fondo-principal {
 		background-image: url(images/cover2.jpg);
-		height: 750px;
+		height: 710px;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
