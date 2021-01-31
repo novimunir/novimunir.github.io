@@ -7,7 +7,7 @@ body {
 
 .fondo-principal {
 	background-position: center;
-	height: 700px;
+	height: 800px;
 	background-image: url(images/cover.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
