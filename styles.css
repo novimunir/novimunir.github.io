@@ -1,4 +1,5 @@
 body {
+	height: 100%;
 	position: relative;
 	font-family: 'Caveat', cursive;
 	background-color: #ffffff;
@@ -32,8 +33,6 @@ img.logo-fecha {
 	.fondo-principal {
 		background-image: url(images/cover2.jpg);
 		height: 100%;
-
-		/* Center and scale the image nicely */
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
