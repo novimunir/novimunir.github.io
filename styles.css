@@ -104,7 +104,7 @@ h2 {
 .float {
 	position: fixed;
 	width: 10px;
-	bottom: 5px;
+	bottom: 0.5px;
 	right: 80%;
 }
 
