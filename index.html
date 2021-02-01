@@ -28,7 +28,8 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse.show" id="navbarSupportedContent">
+			<div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse.show"
+				id="navbarSupportedContent">
 				<ul class="navbar-nav mx-auto">
 					<li class="nav-item active">
 						<a class="nav-link" href="#">Beranda<span class="sr-only">(current)</span></a>
@@ -40,10 +41,10 @@
 						<a class="nav-link" href="#kutipan">Kutipan</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#lokasi">Lokasi</a>
+						<a class="nav-link" href="#akad">Akad</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#akad">Akad</a>
+						<a class="nav-link" href="#lokasi">Lokasi</a>
 					</li>
 				</ul>
 			</div>
@@ -74,6 +75,56 @@
 				</div>
 			</div> -->
 		</div>
+		<!-- -------Akad------ -->
+		<div class="col-12 col-md-6" id="akad">
+			<div class="container cuadrado">
+				<h1>Akad & Resepsi</h1>
+				<hr class="my-4">
+				<h3>20 Februari 2021</h3>
+				<h3>Mulai pukul 09.00 s/d Selesai</h3>
+				<br>
+				<div class="countdown">
+					<!-- -------Countdown------ -->
+					<p id="demo"></p>
+					<script>
+						// Mengatur waktu akhir perhitungan mundur
+						var countDownDate = new Date("Feb 20, 2021 09:00:00").getTime();
+
+						// Memperbarui hitungan mundur setiap 1 detik
+						var x = setInterval(function () {
+
+							// Untuk mendapatkan tanggal dan waktu hari ini
+							var now = new Date().getTime();
+
+							// Temukan jarak antara sekarang dan tanggal hitung mundur
+							var distance = countDownDate - now;
+
+							// Perhitungan waktu untuk hari, jam, menit dan detik
+							var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+							var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+							var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+							var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+							// Keluarkan hasil dalam elemen dengan id = "demo"
+							document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+								minutes + "m " + seconds + "s ";
+
+							// Jika hitungan mundur selesai, tulis beberapa teks 
+							if (distance < 0) {
+								clearInterval(x);
+								document.getElementById("demo").innerHTML = "EXPIRED";
+							}
+						}, 1000);
+					</script>
+				</div>
+				<!-- -------Countdown------ -->
+				<br>
+				<h1>Mohonn Do'a Restu</h1>
+				<h3>Terima kasih</h3>
+			</div>
+			<!-- -------Akad------ -->
+		</div>
+
 		<div class="row light-gray" id="lokasi">
 			<div class="col-12 col-md-6 ">
 				<br>
@@ -92,68 +143,8 @@
 						width="400" height="450" frameborder="0" style="border:0;" allowfullscreen=""
 						aria-hidden="false" tabindex="0"></iframe>
 				</center>
-			</div>
-
-			<div class="col-12 col-md-6" id="akad">
-				<div class="container cuadrado">
-					<h1>Akad & Resepsi</h1>
-					<hr class="my-4">
-					<h3>20 Februari 2021</h3>
-					<h3>Mulai pukul 09.00 s/d Selesai</h3>
-					<br>
-					<div class="countdown">
-						<!-- -------Countdown------ -->
-						<p id="demo"></p>
-						<script>
-							// Mengatur waktu akhir perhitungan mundur
-							var countDownDate = new Date("Feb 20, 2021 09:00:00").getTime();
-
-							// Memperbarui hitungan mundur setiap 1 detik
-							var x = setInterval(function () {
-
-								// Untuk mendapatkan tanggal dan waktu hari ini
-								var now = new Date().getTime();
-
-								// Temukan jarak antara sekarang dan tanggal hitung mundur
-								var distance = countDownDate - now;
-
-								// Perhitungan waktu untuk hari, jam, menit dan detik
-								var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-								var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-								var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-								var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-								// Keluarkan hasil dalam elemen dengan id = "demo"
-								document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-									minutes + "m " + seconds + "s ";
-
-								// Jika hitungan mundur selesai, tulis beberapa teks 
-								if (distance < 0) {
-									clearInterval(x);
-									document.getElementById("demo").innerHTML = "EXPIRED";
-								}
-							}, 1000);
-						</script>
-					</div>
-					<!-- -------Countdown------ -->
-					<br>
-					<h1>Mohonn Do'a Restu</h1>
-					<h3>Terima kasih</h3>
-					<!-- -----------audio----------- -->
-					<div class="float">
-						<audio controls autoplay id="myAudio">
-							<source src="audio/Marry Me - Train w_ lyrics.mp3">
-						</audio>
-						<p id="play-music"></p>
-						<script>
-							function myFunction() {
-								var music = document.getElementById("myAudio").autoplay;
-								document.getElementById("play-music").innerHTML = music;
-							}
-						</script>
-					</div>
-					<!-- -----------audio----------- -->
-				</div>
+				<br>
+				<br>
 			</div>
 		</div>
 		<div class="col-12 col-md-12">
@@ -172,6 +163,21 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 	</script>
+
+	<!-- -----------audio----------- -->
+	<div class="float">
+		<audio controls autoplay id="myAudio">
+			<source src="audio/Marry Me - Train w_ lyrics.mp3">
+		</audio>
+		<p id="play-music"></p>
+		<script>
+			function myFunction() {
+				var music = document.getElementById("myAudio").autoplay;
+				document.getElementById("play-music").innerHTML = music;
+			}
+		</script>
+	</div>
+	<!-- -----------audio----------- -->
 </body>
 
 </html>
