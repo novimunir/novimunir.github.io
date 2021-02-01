@@ -49,6 +49,15 @@ img.logo-fecha {
 	.tandem {
 		width: 300px;
 	}
+
+	.icon-animasi {
+		background-image: url(images/icon.jpg);
+		height: 400px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: -30px;
+	}
 }
 
 h1 {
