@@ -150,9 +150,10 @@ footer {
 }
 
 .doa {
+	color: #fff;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-color: bisque;
+	background-color: rgb(250, 117, 228);
 	width: 100%;
 }
 
