@@ -4,7 +4,6 @@ html {
 
 body {
 	height: 100%;
-	position: relative;
 	font-family: 'Caveat', cursive;
 	background-color: #ffffff;
 }
@@ -202,4 +201,12 @@ footer {
 	height: 100%;
 	width: 100%;
 	position: absolute;
+}
+
+.bunga-satu {
+	background-image: url(images/bunga.png);
+	height: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 10px 0px 10px 0px;
 }
