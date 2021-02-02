@@ -80,8 +80,8 @@ h2 {
 }
 
 .cuadrado {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 30px;
+	margin-bottom: 70px;
 	max-width: 100%;
 }
 
@@ -203,10 +203,10 @@ footer {
 	position: absolute;
 }
 
-.bunga-satu {
+/* .bunga-satu {
 	background-image: url(images/bunga.png);
 	height: 30px;
 	background-position: center;
 	background-repeat: no-repeat;
 	margin: 10px 0px 10px 0px;
-}
+} */
