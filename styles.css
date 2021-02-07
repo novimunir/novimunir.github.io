@@ -195,7 +195,9 @@ footer {
 	position: absolute;
 }
 
-
+#maps{
+	color: rgb(40, 130, 214);
+}
 /* .bunga-satu {
 	background-image: url(images/bunga.png);
 	height: 30px;
