@@ -157,14 +157,6 @@ footer {
 	font-size: 50px;
 }
 
-.doa {
-	color: #fff;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	background-color: rgb(245, 49, 212);
-	width: 100%;
-}
-
 .rute {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -202,6 +194,7 @@ footer {
 	width: 100%;
 	position: absolute;
 }
+
 
 /* .bunga-satu {
 	background-image: url(images/bunga.png);
