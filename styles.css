@@ -111,11 +111,8 @@ h2 {
 
 .float {
 	position: fixed;
-	/* width: 10px; */
 	bottom: 0.5px;
-	/* left: 15%; */
-    left: 50%;
-    transform: translate(-50%, 0);
+	left: 15%;
 }
 
 footer {
