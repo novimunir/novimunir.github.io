@@ -59,6 +59,18 @@ img.logo-fecha {
 	}
 }
 
+.fisik {
+	background-color: rgb(214, 187, 153);
+	text-align: center;
+}
+
+.fisik img {
+	border: solid rgb(122, 190, 218) 5px;
+	border-radius: 5px;
+	margin-top: 5px;
+	width: 300px;
+}
+
 h1 {
 	font-family: 'Pinyon Script', cursive;
 }
